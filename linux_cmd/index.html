@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>empty - ppss</title>
+        <title>linux command - ppss</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                                 <a href=".." class="nav-link">index</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">empty</a>
+                                <a href="./" class="nav-link active" aria-current="page">linux command</a>
                             </li>
                         </ul>
 
@@ -76,9 +76,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#empty-page" class="nav-link">Empty page</a>
+            <li class="nav-item" data-bs-level="1"><a href="#linux-command" class="nav-link">Linux command</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#todo" class="nav-link">Todo</a>
+            <li class="nav-item" data-bs-level="2"><a href="#mount" class="nav-link">mount</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lsblk" class="nav-link">lsblk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fdisk" class="nav-link">fdisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mkfs" class="nav-link">mkfs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -89,11 +101,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="empty-page">Empty page</h1>
-<h2 id="todo">Todo</h2>
-<ul>
-<li>[ ] fill in this page</li>
-</ul></div>
+<h1 id="linux-command">Linux command</h1>
+<h2 id="mount">mount</h2>
+<pre><code class="language-sh">sudo mount -o uid=&lt;uid&gt;,gid=&lt;gid&gt; /dev/sda1 ./sda1
+sudo umount /dev/sda1
+</code></pre>
+<h2 id="lsblk">lsblk</h2>
+<h2 id="fdisk">fdisk</h2>
+<h2 id="mkfs">mkfs</h2>
+<p><code>sh
+sudo mkfs.exfat /dev/sda1</code></p></div>
             </div>
         </div>
 
