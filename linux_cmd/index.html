@@ -94,6 +94,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#python-venv" class="nav-link">python venv</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -113,6 +117,11 @@ sudo umount /dev/sda1
 <h2 id="mkfs">mkfs</h2>
 <pre><code class="language-sh"># 格式化磁盘为指定格式
 sudo mkfs.exfat /dev/sda1
+</code></pre>
+<h2 id="python-venv">python venv</h2>
+<pre><code class="language-sh">python -m venv myenv
+source myenv/bin/activate
+deactivate
 </code></pre></div>
             </div>
         </div>
