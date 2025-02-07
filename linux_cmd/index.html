@@ -102,6 +102,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#laptop" class="nav-link">laptop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#init-os" class="nav-link">init os</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -133,6 +141,18 @@ podman ps -a
 
 podman run -it -d --name deb --network host -v /etc/localtime:/etc/localtime localhost/new_debian:latest &amp;&amp; podman exec  deb /root/start_ssh.sh 
 podman exec -it deb zsh
+</code></pre>
+<h2 id="laptop">laptop</h2>
+<pre><code class="language-sh">vim /etc/systemd/logind.conf
+HandleLidSwitch
+</code></pre>
+<h2 id="init-os">init os</h2>
+<pre><code class="language-sh"># sudo
+vim /etc/sudoers
+ps ALL=(ALL:ALL) NOPASSWD:ALL
+
+# tools
+sudo apt install build-essential clangd git cmake make gdb zsh zip unzip curl tree -y
 </code></pre></div>
             </div>
         </div>
