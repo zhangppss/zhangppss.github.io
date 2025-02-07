@@ -131,8 +131,7 @@ deactivate
 <pre><code>podman images
 podman ps -a
 
-podman run -it -d --name deb --network host -v /etc/localtime:/etc/localtime localhost/new_debian:latest
-podman exec  deb /root/start_ssh.sh 
+podman run -it -d --name deb --network host -v /etc/localtime:/etc/localtime localhost/new_debian:latest &amp;&amp; podman exec  deb /root/start_ssh.sh 
 podman exec -it deb zsh
 </code></pre></div>
             </div>
