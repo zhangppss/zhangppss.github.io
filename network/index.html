@@ -117,13 +117,15 @@
 <h2 id="ip">固定无线网卡IP</h2>
 <pre><code class="language-shell">cat /etc/network/interfaces
 </code></pre>
-<pre><code>iface wlp2s0 inet static 
+<pre><code>***
+iface wlp2s0 inet static 
         wpa-ssid Ziroom-201
         wpa-psk  1234567890a
         address a.b.c.d
         netmask 255.255.255.0
         gateway a.b.c.1
         dns-nameservers 8.8.8.8 114.114.114.114
+***
 </code></pre>
 <h2 id="git-ssh">git ssh走代理</h2>
 <pre><code class="language-sh">cat ~/.ssh/config
